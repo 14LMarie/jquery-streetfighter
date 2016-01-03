@@ -11,6 +11,9 @@
     box-sizing: border-box;
 }
 
+* {
+    outline: red 1px solid;
+}
 /* General styles
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
@@ -43,12 +46,12 @@ body {
     height: 494px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   width: 659px;
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 } 
 
@@ -62,6 +65,10 @@ body {
 
 .ryu-throwing {
   background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
 }
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
@@ -78,6 +85,31 @@ body {
     top: 163px;
     left: 603px;
     float: left;
+}
+
+.instructions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    left: 645px;
+    top: 27px;
+}
+
+.instructions p {
+    padding: 0.2rem 0;
+}
+
+.action, .cool-side {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+}
+
+.action {
+    color: red;
+}
+
+.cool-side {
+    color: blue;
 }
 /* Footer styles
     (all the styles inside the < footer > tag)
