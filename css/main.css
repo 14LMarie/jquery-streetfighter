@@ -1,0 +1,89 @@
+/* CSS reset
+    (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+}
+
+/* General styles
+    (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    background-color: black;
+}
+
+
+/* Header styles
+    (all the styles inside the < header > or < nav > tags)
+*/
+
+
+/* Content styles
+    (all the styles inside the < sections > or < aside > tags)
+*/
+.main {
+    background-color: white;
+    margin-top: 110px;
+    padding-left: 100px;
+    min-width: 1200px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.ryu {
+    width: 659px;
+    height: 494px;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing {
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+  display: none;
+} 
+
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+    background-repeat: no-repeat;
+}
+
+.hadouken {
+    background-image: url('../images/hadouken.gif');
+    width: 156px;
+    height: 90px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 163px;
+    left: 603px;
+    float: left;
+}
+/* Footer styles
+    (all the styles inside the < footer > tag)
+*/
+
+
+/* Responsive styles
+    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
